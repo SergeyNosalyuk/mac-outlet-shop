@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+header {
+	min-width: 700px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 10px 20px 30px;
+}
+
+.basket {
+	border: black solid 1px;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+.banner {
+	width: 1028px;
+	height: 520px;
+	margin: 20px auto;
+
+}
+
+.filters {
+	width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+	padding: 10px 20px;
+	border: #DDDADA solid 1px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #DDDADA;
+}
+
+.btn-search {
+	border: #fff solid 1px;
+	background-color: #fff;
+}
+
+.input-search {
+	width: 860px;
+	height: 40px;
+	border: #fff solid 1px;
+	background-color: #fff;
+
+}
+
+.items {
+	max-width: 1028px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px auto;
+	padding: 20px;
+
+}
+
+.product {
+	position: relative;
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: #DDDADA solid 1px;
+	border-radius: 7px;
+	box-shadow: 0 0 10px #DDDADA;
+	margin-bottom: 40px;
+}
+
+.header-items {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 20px;
+	right: 20px;
+	text-align: right;
+}
+
+.like {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 20px;
+	bottom: 20px;
+	right: 20px;
+	text-align: right;
+}
+
+.likeborder {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 20px;
+	right: 20px;
+	text-align: right;
+}
+
+.product-img {
+	width: 100%;
+	text-align: center;
+}
+
+.content-items {
+	width: 100%;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.btn-items {
+	width: 70%;
+	margin: 20px;
+	background-color: rgb(10, 10, 202);
+	color: #fff;
+	border-radius: 5px;
+	border-color: rgb(10, 10, 202);
+}
+
+.btn-items-grey {
+	width: 70%;
+	margin: 20px;
+	background-color: rgb(199, 199, 195);
+	color: #fff;
+	border-radius: 5px;
+	border-color: rgb(199, 199, 195);
+}
+
+.footer-items {
+	width: 100%;
+	background-color: rgb(190, 190, 255); 
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px 20px;
+	border-radius: 7px;
+}
+
+.footer-items-img {
+	width: 20px;
+	height: 37px;
+}
