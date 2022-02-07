@@ -1,3 +1,4 @@
+// export 
 const items = [
     {
         id: 1,
@@ -1272,9 +1273,89 @@ const items = [
     },
 ];
 
-for (let i = 0; i < items.length; i++) {
-    console.log(items[i]);
+
+let itemsContainer = document.getElementById("items");
+
+let card = document.getElementById("card");
+itemsContainer.innerHTML = "";
+items.map(item=>{
+
+let newElement = document.createElement("div");
+    newElement.classList.add("product")
+
+
+    let tvimage = card.getElementsByClassName("main-image");
+    tvimage[0].src = item.imgUrl;
+
+    let header = card.getElementsByClassName("content-items-title");
+    header[0].textContent = item.name;
+
+    let check = card.getElementsByClassName("content-items-img")
+    if (item.orderInfo.inStock <=0) {
+        check[0].style.border = "none"
+        check[0].src = 'img/images/close1.svg'
+        check[0].style.width = '20px'
+        check[0].style.heigth = '20px'
+    } 
+    else {
+    check[0].style.border = "#1bc943 2px solid"
+    check[0].style.borderRadius = "50%"
+    check[0].src = 'img/images/vector-1.png'
+    check[0].style.padding = "3px 2px 3px"
+    }   
+    
+    let btn = card.getElementsByClassName("btn-items")
+    if (item.orderInfo.inStock <=0) {
+       btn[0].style.backgroundColor = "grey"
+       btn[0].style.border = "none"
+    }
+    else {
+        btn[0].style.backgroundColor = "rgb(10, 10, 202)"
+    }
+
+    let count = card.getElementsByClassName("count-in-stock");
+    count[0].textContent = item.orderInfo.inStock;
+
+    let price = card.getElementsByClassName("content-items-price");
+    price[0].textContent = 'Price: ' + item.price + '$';
+
+    let reviews = card.getElementsByClassName ("percent")
+    reviews[0].textContent = item.orderInfo.reviews;
+
+    let order = card.getElementsByClassName ("orders")
+    order[0].textContent = Math.trunc(Math.random() * 10000);
+
+    newElement.innerHTML = card.innerHTML;
+    itemsContainer.appendChild(newElement);
+})
+
+function like ($this) {
+    let path = $this.src.slice($this.src.indexOf("img/images/"))
+    // console.log($this.src);
+
+    if(path == "img/images/like.png") {
+        $this.src = "img/images/like-filled.svg"
+        console.log();
+    }
+
+    else{
+        $this.src = "img/images/like.png"
+    }
 }
+
+let flag=0
+function fil() {
+    let filter= document.getElementById("filter");
+    filter.style.display="none"
+
+    if (flag%2==0) {
+        filter.style.display="block"
+    }
+    else filter.style.display="none"
+    flag++
+    
+}
+
 
 
 

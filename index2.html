@@ -20,7 +20,7 @@
     </header>
     <main>
         <div class="banner">
-            <img class="bannertype" src="img/images/banner.png" alt="banner">
+            <img class="bannertype" src="img/banners/airpods_pro_banner.png" alt="banner">
         </div>
         <div class="filters">
             <div class="search">
@@ -29,14 +29,57 @@
                     <input class="input-search" type="text" placeholder="Enter device name...">
                 </form>
             </div>
-            <img class="filtertype" src="img/images/filter.svg" alt="filter">
+            <span onclick="fil()">
+                <img class="filtertype" src="img/images/filter.svg" alt="filter">
+            </span>
             <img class="sorttype" src="img/images/sort.svg" alt="sort">
         </div>
 
-
         <div class="content">
-            <div id="items" class="items">
+            <div class="all_main">
+                <div id="filter" class="filter">
+                    <span class="filter_name">
+                        <p>Price</p>
 
+                        <img src="img/icons/arrow_left.svg" alt="">
+                    </span>
+                        <span class="filter_info">
+
+                        </span>
+                    <span class="filter_name">
+                        <p>Color</p>
+                        
+                        <img src="img/icons/arrow_left.svg" alt="">
+                    </span>
+                    <span class="filter_info">
+
+                    </span>
+                    <span class="filter_name">
+                        <p>Memory</p>
+
+                        <img src="img/icons/arrow_left.svg" alt="">
+                    </span>
+                    <span class="filter_info">
+
+                    </span>
+                    <span class="filter_name">
+                        <p>OS</p>
+
+                        <img src="img/icons/arrow_left.svg" alt="">
+                    </span>
+                    <span class="filter_info">
+
+                    </span>
+                    <span class="filter_name">
+                        <p>Display</p>
+
+                        <img src="img/icons/arrow_left.svg" alt="">
+                    </span>
+                    <span class="filter_info">
+
+                    </span>
+                </div>
+            <div id="items" class="items">
                 <div id="card" class="product">
                     <div class="header-items">
                         <img class="like" onclick="like(this)" src="img/images/like.png" alt="like">
@@ -70,40 +113,6 @@
                         </span>
                     </div>
                </div>
-
-
-               <!--
-                   <div id="card" class="product">
-                       <div class="header-items">
-                           <img src="img/icons/like_empty.svg" alt="like">
-                       </div>
-                       <div class="product-img">
-                           <img id="tv-img" class="tv-img" src="img/images/image2.png" alt="tv">
-                       </div>
-                       <div class="content-items">
-                           <h3 class="content-items-header"></h3>
-                           <span>
-                               <img src="img/images/vector-1.png" alt="vector-1">
-                               <strong></strong>  <br>
-                                <strong></strong>
-                           </span>
-                           <button class="btn-items">
-                               <p></p>
-                           </button>
-                       </div>
-                       <div class="footer-items">
-                           <img class="footer-items-img" src="img/images/like-filled.svg" alt="like-filled">
-                           <span>
-                               <strong>77</strong>% Positive reviews <br>
-
-                           </span>
-                           <span>
-                               <strong>527</strong> <br>
-                               orders
-                           </span>
-                       </div>
-                   </div>
--->
            </div>
        </div>
    </main>

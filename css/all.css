@@ -5,25 +5,31 @@
 }
 
 header {
-	min-width: 700px;
+	max-width: 1028px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background: #fff;
 	padding: 10px 20px 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .basket {
 	border: black solid 1px;
 	border-radius: 50%;
-	padding: 7px;
+	padding: 7px 7px 3px;
 }
 
 .banner {
 	width: 1028px;
 	height: 520px;
 	margin: 20px auto;
+}
 
+.bannertype {
+	width: 1028px;
+	height: 520px;
 }
 
 .filters {
@@ -50,26 +56,70 @@ header {
 
 }
 
+.content {
+	max-width: 1028px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.filter{
+	display: none;
+    min-width: 30%;
+    position: relative;
+    width: 30%;
+    border: #DDDADA solid 1px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #dddada;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.filter_name{
+    padding: 0 10px;
+    justify-content: space-between;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: #DDDADA solid 1px;
+    background-color: #EDF3FF;
+}
+
+.all_main{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+	align-items: flex-start;
+}
+
+
+@media (max-width: 1115px) { 
+    .products{
+        justify-content: center;
+    }
+}
+
 .items {
 	max-width: 1028px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 20px auto;
-	padding: 20px;
-
+	margin: 0 auto;
+	padding: 0;
 }
 
 .product {
 	position: relative;
-	width: 30%;
+	width: 45%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	border: #DDDADA solid 1px;
 	border-radius: 7px;
 	box-shadow: 0 0 10px #DDDADA;
-	margin-bottom: 40px;
+	margin: 0 10px 40px;
 }
 
 .header-items {
@@ -77,16 +127,6 @@ header {
 	width: 24px;
 	height: 24px;
 	top: 20px;
-	right: 20px;
-	text-align: right;
-}
-
-.like {
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	top: 20px;
-	bottom: 20px;
 	right: 20px;
 	text-align: right;
 }
@@ -120,15 +160,6 @@ header {
 	border-color: rgb(10, 10, 202);
 }
 
-.btn-items-grey {
-	width: 70%;
-	margin: 20px;
-	background-color: rgb(199, 199, 195);
-	color: #fff;
-	border-radius: 5px;
-	border-color: rgb(199, 199, 195);
-}
-
 .footer-items {
 	width: 100%;
 	background-color: rgb(190, 190, 255); 
@@ -141,4 +172,10 @@ header {
 .footer-items-img {
 	width: 20px;
 	height: 37px;
+}
+
+
+img.main-image {
+    width: 200px;
+    height: 200px;
 }
